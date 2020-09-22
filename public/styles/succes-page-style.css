@@ -1,0 +1,45 @@
+body {
+    padding: 10vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(37, 37, 134);
+}
+
+#schedule-confirmation {
+    height: 50vh;
+    padding: 10px;
+}
+
+#schedule-confirmation img {
+    width: 9vw;
+    transition: 500ms;
+}
+
+#schedule-confirmation img:hover {
+    width: 11vw;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+#schedule-confirmation h1 {
+    color: rgb(9, 0, 17);
+    font-weight: bold;
+    font-family: 'Bellota Text';
+    font-size: 32px;
+    padding: 10px;
+    transition: 600ms;
+    cursor: default;
+}
+#schedule-confirmation h1:hover {
+    font-size: 40px;
+}
+
+#schedule-confirmation p {
+    font-family: 'Bellota Text';
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.24);
+}

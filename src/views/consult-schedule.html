@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600;800&family=Bellota+Text:ital,wght@0,300;1,300&family=Bungee&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./../public/styles/main.css">
+        <link rel="stylesheet" href="./../public/styles/consult-schedule-page.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="main-title">
+            <h1>KLG Informatica</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Referências</a></li>
+                    <li><a href="./consult-schedule.html">Agende uma consulta</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="schedule-form">
+            <h1>
+                Digite aqui suas informações para que um de nossos técnicos entre em contato! 
+            </h1>
+            <small>- Antes de contatar o serviço, leia sobre ele na página de serviços - </small>
+            <small>- Os técnicos tentarão entrar em contato pelo telefone <br> se não obtiverem sucesso, tentarão pelo e-mail</small>
+            <form action="/schedule-post" id="schedule" autocomplete="off" method="POST">
+                <fieldset>
+                    <label for="user-name">Digite seu nome (Completo)</label>
+                    <input type="text" name="user_name" id="user-name" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="user-adress">Digite seu endereço (Rua, Bairro e Número)</label>
+                    <input type="text" name="user_adress" id="user-adress" required>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="user-adress">Digite seu email (Gmail, Hotmail, Yahoo...)</label>
+                    <input type="text" name="user_email" id="user-email" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="user-tel-number">Digite seu número de telefone (Com o DDD da cidade)</label>
+                    <input type="number" name="user_tel_number" id="user-tel-number" required>
+                </fieldset>
+
+                <fieldset>
+                    <select name="service_select" id="service-select" aria-placeholder="">
+                        <option value="" disabled selected>Selecione o serviço desejado</option>
+                        <option value="manutencao_computador">Formatação/Manutenção geral de computador</option>
+                        <option value="sistema_empresa">Sistemas para empresas</option>
+                        <option value="criacao_de_sites">Criação de site</option>
+                        <option value="criacao_de_sites">Orçamento / Outros</option>
+                    </select>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </body>
+</html>

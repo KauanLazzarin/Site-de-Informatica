@@ -1,0 +1,55 @@
+body {
+    box-sizing: border-box;
+    background: rgb(2,0,36);
+    background: linear-gradient(13deg, rgba(2,0,36,1) 0%, rgba(83,83,164,1) 35%, rgba(37,144,231,1) 68%, rgba(0,212,255,1) 100%);
+}
+
+#main-title {
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-title h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bungee', cursive;
+    color: rgb(3, 25, 43);
+    width: 30vw;
+    margin-left: 40px;
+    margin-top: -20px;
+    padding-top: 40px;
+    border-top: 2px solid rgb(2, 51, 70);
+    border-radius: 70%;
+}
+
+#main-title #menu {
+    width: 590px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+    padding-bottom: 10px;
+}
+
+#main-title ul li{
+    display: inline;
+    padding: 10px;
+}
+
+#main-title a { 
+    font-family:'Arial';
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(7, 17, 77);
+    padding: 10px ;
+    margin-bottom: 10px;
+    transition: 200ms;
+    border-left: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 50px;
+}
+
+#main-title a:hover {
+    background-color: rgb(57, 156, 214);
+    color: rgb(6, 4, 102);
+}

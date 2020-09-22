@@ -1,0 +1,27 @@
+{
+  "name": "Site-de-Informatica",
+  "version": "1.0.0",
+  "description": "I'm developing this site just for practice, the premise is a site that the user can schedule a visit of a computer technician.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KauanLazzarin/Site-de-Informatica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KauanLazzarin/Site-de-Informatica/issues"
+  },
+  "homepage": "https://github.com/KauanLazzarin/Site-de-Informatica#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.2",
+    "sqlite-async": "^1.1.0"
+  }
+}
