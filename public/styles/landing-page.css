@@ -1,5 +1,210 @@
+#main-content {
+    width: 90vw;
+    padding-bottom: 3vh;
+}
+
+#main-content h2, p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#main-content h2 {
+    font-family: 'Bellota Text', cursive;
+    font-size: 38px;
+    color: black;
+}
+
+#main-content p {
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: rgb(49, 48, 48);
+}
+
+#main-content img {
+    width: 40vw;
+    margin-left: 27%;
+    margin-right: 27%;
+    border-radius: 100%;
+}
+
+#main-content a {
+    font-family: 'Bellota Text';
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(1, 1, 63);
+    text-decoration: none;
+    text-align: center;
+    transition: 600ms;
+    border: 0.3px solid rgb(1, 1, 63);
+
+    margin-top: 20px;
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-content a:hover {
+    font-size: 22px;
+    border-radius: 50px;
+}
+
+.sub-content {
+    width: 90vw;
+    height: auto;
+    margin-top: 15vh;
+}
+
+.sub-content h3 {
+    font-family: 'Bellota Text';
+    font-size: 28px;
+    text-align: center;
+    color: rgba(5, 2, 44, 0.952);
+}
+
+.sub-content p {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(129, 129, 129);
+}
+
+.sub-content img {
+    width: 40vw;
+    margin-left: 25%;
+    border-radius: 100%;
+}
+
+.sub-content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    padding: 20px 0px 20px 0px;
+    border-radius: 120px;
+    text-align: center;
+    
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(3, 14, 37, 0.884);
+    background-color: rgb(66, 70, 175);
+    transition: 0.7s;
+}
+
+.sub-content a:hover {
+    font-size: 22px;
+    padding: 30px;
+}
 
 
+@media (min-width: 700px) {
+    #main-content {
+        width: 100%;
+        padding: 5vh 0;
+        border-top: 1px solid black;
+        border-radius: 120px;
+        background-color: rgba(24, 101, 104, 0.253);
+    }
+
+    #main-content h2, p {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main-content h2 {
+        font-weight: bold;
+        color: rgb(3, 3, 43);
+    }
+
+    #main-content p {
+        font-size: 20px;
+        color: rgb(3, 3, 97);
+    }
+
+    #main-content img {
+        width: 25vw;
+        margin-left: 37%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #main-content a {
+        border: 0;
+        color: black;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #main-content a:hover {
+        font-size: 28px;
+    }
+
+    .sub-content {
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        width: 100vw;
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        background-color: rgba(46, 46, 168, 0.438);
+        border: 0;
+        border-bottom: 1px solid black;
+        border-radius: 8px;
+    }
+
+
+    .sub-content img {
+        display: inline-block;
+        width: 10vw;
+        margin: 0 1vw;
+        padding: 0;
+    }
+
+
+    .sub-content h3, p, a  {
+        text-align: center;
+        border-right: 1px solid black;
+        padding: 3vw 0;
+    }
+
+    .sub-content h3 {
+        margin-right: 2vw;
+        font-size: 28px;
+        font-weight: bolder;
+        font-family: 'Balloo';
+        color: rgb(15, 2, 59);
+    }
+
+    .sub-content p {
+        color: rgba(255, 255, 255, 0.425);
+    }
+
+    .sub-content a {
+        width: 50vw;
+        background: none;
+        border: 0;
+        color: rgb(180, 165, 207);
+        font-size: 22px;
+    }
+
+    .sub-content a:hover {
+        font-size: 23px ;
+    }
+
+
+}
+
+    
+/* 
 #main-content {
     width: 100%;
     background-color: rgba(24, 101, 104, 0.253);
@@ -111,4 +316,4 @@
 .sub-content a:hover {
     background-color: rgb(77, 65, 185);
     color: rgb(60, 135, 247);
-}
+} */

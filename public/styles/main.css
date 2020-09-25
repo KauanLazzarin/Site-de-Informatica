@@ -1,55 +1,95 @@
 body {
     box-sizing: border-box;
     background: rgb(2,0,36);
-    background: linear-gradient(13deg, rgba(2,0,36,1) 0%, rgba(83,83,164,1) 35%, rgba(37,144,231,1) 68%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(13deg, rgb(67, 63, 146) 0%, rgba(83,83,164,1) 35%, rgba(37,144,231,1) 68%, rgba(0,212,255,1) 100%);
 }
 
 #main-title {
-    width: 90%;
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
+
+    flex-direction: column;
+    max-width: 74vw;
+    width: 100%;
+    padding: 3vw 10vw 3vw 10vw;
+    text-align: center;
+    border-bottom: 1px solid black;
 }
 
 #main-title h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-stretch: ultra-condensed;
     font-family: 'Bungee', cursive;
-    color: rgb(3, 25, 43);
-    width: 30vw;
-    margin-left: 40px;
-    margin-top: -20px;
-    padding-top: 40px;
-    border-top: 2px solid rgb(2, 51, 70);
-    border-radius: 70%;
+    color: #0b1116;
+    font-size: 38px;
+    transition: 2200ms;
 }
-
 #main-title #menu {
-    width: 590px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
-    padding-bottom: 10px;
+    height: 20vh;
+    width: 60vw;
 }
 
-#main-title ul li{
-    display: inline;
-    padding: 10px;
+
+#main-title  ul {
+    list-style: none;
 }
 
-#main-title a { 
-    font-family:'Arial';
-    font-weight: 100;
+#main-title #menu a {
+    font-size: 23px;
     text-decoration: none;
-    font-size: 22px;
-    color: rgb(7, 17, 77);
-    padding: 10px ;
-    margin-bottom: 10px;
-    transition: 200ms;
-    border-left: 1px solid rgba(0, 0, 0, 0.329);
-    border-radius: 50px;
+    color: rgb(10, 4, 90);
+    transition: 400ms;
+    cursor: pointer;
 }
 
-#main-title a:hover {
-    background-color: rgb(57, 156, 214);
-    color: rgb(6, 4, 102);
+#main-title #menu a:hover {
+    font-size: 26px;
+}
+
+@media (min-width: 700px) {
+    #main-title {
+        border: 0;
+        width: 90%;
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: inherit;
+    }
+    
+    #main-title h1 {
+        text-align: center;
+        font-family: 'Bungee', cursive;
+        color: rgb(3, 25, 43);
+        width: 30vw;
+        border-radius: 70%;
+    }
+    
+    #main-title #menu {
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    
+    #main-title ul li{
+        display: inline-block;
+        margin-left: 3vw;
+    }
+    
+    #main-title a { 
+        border: 0;
+        font-family:'Roboto';
+        font-weight: 100;
+        text-decoration: none;
+        font-size: 24px;
+        color: rgb(7, 17, 77);
+        padding: 10px ;
+        margin-bottom: 10px;
+        transition: 600ms;
+        border-radius: 50px;
+    }
+    
+    #main-title a:hover {
+        font-size: 26px;
+    }
 }

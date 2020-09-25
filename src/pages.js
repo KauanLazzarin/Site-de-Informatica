@@ -12,6 +12,10 @@ const scheduleConfirmation = (req, res) => {
     res.render('schedule-success.html')
 }
 
+const servicesPage = (req, res) => {
+    res.render('services.html')
+}
+
 const clientRegister = async (req, res) => {
     const registerClient = require('./database/client_register.js')
 
@@ -37,5 +41,6 @@ module.exports = {
     landingPage,
     schedulePage,
     clientRegister,
-    scheduleConfirmation
+    scheduleConfirmation,
+    servicesPage
 }
