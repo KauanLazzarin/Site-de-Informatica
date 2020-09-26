@@ -1,5 +1,7 @@
 const dataBase = require('./database/db.js')
 
+
+// Routes of the website (Only get methods)
 const landingPage = (req, res) => {
     res.render('index.html')
 }
@@ -16,6 +18,10 @@ const servicesPage = (req, res) => {
     res.render('services.html')
 }
 
+// ==============================================================
+
+
+// Function that insert de client data at the db
 const clientRegister = async (req, res) => {
     const registerClient = require('./database/client_register.js')
 
@@ -36,7 +42,9 @@ const clientRegister = async (req, res) => {
         console.log(error)
     }
 }
+// ==============================================================
 
+//Export all the functions 
 module.exports = {
     landingPage,
     schedulePage,

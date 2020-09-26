@@ -123,7 +123,7 @@
     
         text-align: center;
         border-bottom: 3px solid  rgba(1, 1, 61, 0.301);
-        font-family: 'Baloo Da 2', cursive;
+        font-size: 48px;
         color: rgb(1, 1, 61);
     }
     
@@ -162,7 +162,7 @@
         padding: 15px;
         width: 70vw;
         font-size: 20px;
-        background-color: rgba(17, 17, 78, 0.829);
+        background-color: rgba(25, 0, 92, 0.555);
         color:rgb(142, 140, 243);
         font-family: 'Baloo Da 2', cursive;
         font-size: 24px;
