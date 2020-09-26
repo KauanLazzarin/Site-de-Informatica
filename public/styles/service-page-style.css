@@ -1,0 +1,63 @@
+#services-container {
+    width: 100%;
+}
+
+#services-container h1, .service-card .service-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#services-container h1 {
+    font-size: 28px;
+    font-family: 'Bellota Text',cursive;
+    color: rgb(231, 205, 255);
+    background-color: rgb(46, 2, 59);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+
+#services-container .service-card .service-description {
+    border: 1px solid rgb(49, 2, 49);
+    padding: 15px;
+    background-color: rgba(243, 205, 255, 0.336);
+    font-size: 20px;   
+    font-family: 'Bellota Text', cursive;
+    font-weight: bold;
+    color: rgb(64, 5, 112);
+    border-radius: 50px ;
+}
+
+#services-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.service-card {
+    margin-top: 5vh;
+    border-bottom: 2px solid rgb(54, 5, 54);
+}
+
+@media (min-width: 700px) {
+    #services-container {
+        display: grid;
+    }
+
+    #services-container img {
+        width: 30vw;
+        margin-left: 34%;
+    }
+
+    #services-container h1 {
+        background: none;
+        font-size: 48px;
+        border-top: 2px solid purple;
+        color: rgb(61, 3, 61);
+    }
+
+    .service-card {
+        border: 0;
+    }
+}
