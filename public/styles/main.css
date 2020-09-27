@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
 body {
     box-sizing: border-box;
     background: rgb(2,0,36);
@@ -16,11 +20,11 @@ body {
 }
 
 #main-title h1 {
-    font-stretch: ultra-condensed;
     font-family: 'Bungee', cursive;
     color: #0b1116;
     font-size: 38px;
     transition: 2200ms;
+    
 }
 #main-title #menu {
     height: 20vh;
@@ -34,14 +38,15 @@ body {
 
 #main-title #menu a {
     font-size: 23px;
+    font-family: 'Ubuntu Mono';
     text-decoration: none;
     color: rgb(10, 4, 90);
-    transition: 400ms;
+    transition: 200ms;
     cursor: pointer;
 }
 
 #main-title #menu a:hover {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 @media (min-width: 700px) {
@@ -78,8 +83,8 @@ body {
     
     #main-title a { 
         border: 0;
-        font-family:'Roboto';
-        font-weight: 100;
+        font-family:'Ubuntu Mono';
+        font-weight: lighter;
         text-decoration: none;
         font-size: 24px;
         color: rgb(7, 17, 77);
@@ -92,4 +97,8 @@ body {
     #main-title a:hover {
         font-size: 26px;
     }
+}
+
+input[type=number]{
+    -moz-appearance:textfield; 
 }

@@ -18,6 +18,10 @@ const servicesPage = (req, res) => {
     res.render('services.html')
 }
 
+const referencesPage = (req, res) => {
+    res.render('references.html')
+}
+
 // ==============================================================
 
 
@@ -50,5 +54,6 @@ module.exports = {
     schedulePage,
     clientRegister,
     scheduleConfirmation,
-    servicesPage
+    servicesPage,
+    referencesPage
 }

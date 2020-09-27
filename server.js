@@ -2,7 +2,7 @@ const express = require('express')
 const server = express()
 const port = 3003
 const nunjucks = require('nunjucks')
-const {landingPage, schedulePage, clientRegister, scheduleConfirmation, servicesPage} = require('./src/pages.js')
+const {landingPage, schedulePage, clientRegister, scheduleConfirmation, servicesPage, referencesPage} = require('./src/pages.js')
 const { urlencoded } = require('express')
 
 
@@ -15,6 +15,7 @@ server
     .use('/public', express.static('public'))
     .use(express.urlencoded({extended:true}))
     .get('/', landingPage)
+    .get('/references', referencesPage)
     .get('/schedule', schedulePage)
     .get('/services', servicesPage)
     .get('/schedule-confirmation', scheduleConfirmation)

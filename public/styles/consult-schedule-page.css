@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100%;
     width: 90%;
     margin-top: 10px;
@@ -32,9 +33,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Ubuntu Mono';
+    font-weight: 500;
     font-size: 26px;
     font-weight: bold;
-    color: rgb(25, 0, 92);
+    color: rgb(54, 3, 75);
     margin-top: 5vh;
 }
 
@@ -56,6 +59,7 @@
     font-size: 20px;
     font-family: 'Bellota Text';
     font-weight: bold;
+    background-color: rgba(25, 0, 92, 0.555);
 }
 
 #schedule-form select {
@@ -70,7 +74,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Ubuntu Mono';
     font-weight: lighter;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.712);
@@ -88,7 +92,7 @@
     color: rgb(73, 55, 139);
     background:rgba(255, 255, 255, 0.342);
     cursor: pointer;
-    font-family: 'Balloo';
+    font-family: 'Ubuntu Mono';
     font-weight: bold;
     border-radius: 8px;
     margin-top: 5vh;
@@ -145,7 +149,7 @@
         justify-content: center;
         font-size: 26px;
         font-weight: bold;
-        color: rgba(25, 0, 92, 0.555);
+        color: rgb(54, 3, 75);
         margin-top: 5vh;
     }
     
@@ -164,7 +168,7 @@
         font-size: 20px;
         background-color: rgba(25, 0, 92, 0.555);
         color:rgb(142, 140, 243);
-        font-family: 'Baloo Da 2', cursive;
+        font-family: 'Bellota Text', cursive;
         font-size: 24px;
     }
     
@@ -190,7 +194,7 @@
         padding: 15px;
         font-size: 18px;
         background-color: rgb(16, 6, 71);
-        color: white;
+        color: rgb(116, 156, 243);
         cursor: pointer;
         transition: 200ms;
     }

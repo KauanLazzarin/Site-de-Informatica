@@ -7,8 +7,6 @@ const title = document.querySelector('#header-title')
 const style = document.createElement('STYLE')
 
 window.onload = () => {
-    title.style.color = 'black'
-
     function changeTitleColorToBlue () {
         title.style.color = '#000080'
     }
@@ -17,13 +15,19 @@ window.onload = () => {
         title.style.color = 'black'
     }
 
-    setInterval(() => {
-        changeTitleColorToBlue()
-    }, 2000);
+    function changeTitleColor () {
+        setInterval(() => {
+            changeTitleColorToBlue()
+            setInterval(() => {
+                changeTitleColorToBlack()
+                changeTitleColor()
+            }, 2000);
+        }, 2000);
+    }
 
-    setInterval(() => {
-        changeTitleColorToBlack()
-    }, 4000);
+    changeTitleColor()
+
+
 }
 
 // ======================================================

@@ -1,0 +1,92 @@
+h1{
+    color: rgb(0, 0, 82);
+    font-weight: bolder;
+    font-size: 38px;
+    border-radius: 100%;
+    font-family: 'Bellota Text';
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+#card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card {
+    margin-top: 5vh;
+    width: 90%;
+    background-color: rgba(39, 75, 117, 0.445);
+    padding: 15px 10px;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px  rgba(5, 5, 5, 0.315);
+    border: 1px solid rgba(0, 0, 82, 0.274);
+    border-radius: 8px;
+}
+
+.card img {
+    max-width: 50vw;
+    width: 100%;
+}
+
+
+.card h2 {
+    width: 90%;
+    font-family: 'Ubuntu Mono';
+    font-weight: 300;
+    color: rgb(0, 0, 82);
+    font-size: 28px;
+    padding: 10px;
+}
+
+
+
+.card h3 {
+    font-family: 'Bellota Text';
+    font-size: 24px;
+    color: rgb(2, 2, 41);
+}
+
+.card p {
+    font-family: 'Sans-Serif';
+    color: rgb(235, 235, 235);
+    border-bottom: 1px solid black;
+    padding: 2vw 0;
+}
+
+
+
+
+
+@media (min-width: 700px) {
+
+    #card-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2vw;
+    }
+    
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 3vw 0;
+        background-color: rgba(153, 196, 245, 0.171);
+    }
+
+    .card img {
+        display: inline-block;
+        width: 20vw;
+        margin: 3vw 0;
+        border-radius: 8px;
+    }
+}
