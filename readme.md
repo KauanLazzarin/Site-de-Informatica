@@ -1,3 +1,5 @@
-# Simple site for practice.
+# :cyclone: Simple site for practice.
 
-I'm developing this site just for practice, the premise is a site that the user can schedule a visit of a computer technician.
+:smiley: This website was created for practice a bit more of Web Developing! <br>
+:bulb: The premise is a site that the user can schedule a consult or a visit of a computer technician
+
